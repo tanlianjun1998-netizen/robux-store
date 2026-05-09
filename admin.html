@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - Mumber Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+  <h1>Admin Panel</h1>
+
+  <table border="1" width="100%" style="color:white; text-align:center;">
+    <tr>
+      <th>Username</th>
+      <th>Contact</th>
+      <th>Product</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+
+    <tr>
+      <td>Player123</td>
+      <td>0123456789</td>
+      <td>400 Robux</td>
+      <td id="status1">Pending</td>
+      <td>
+        <button onclick="markPaid()">Mark Paid</button>
+        <button onclick="markDone()">Mark Done</button>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+<script>
+function markPaid(){
+  document.getElementById("status1").innerText = "Paid";
+}
+
+function markDone(){
+  document.getElementById("status1").innerText = "Done";
+}
+</script>
+
+</body>
+</html>
