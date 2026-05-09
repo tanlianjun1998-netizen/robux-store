@@ -1,56 +1,102 @@
 body {
+  margin:0;
   font-family: Arial;
-  background: #111;
-  color: white;
-  text-align: center;
+  background:#0b0f19;
+  color:white;
 }
 
-.container {
-  margin-top: 80px;
+/* HEADER */
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#111827;
 }
 
-h1 {
-  color: #00e5ff;
-  font-size: 40px;
+.logo {
+  color:#00e5ff;
+  font-weight:bold;
 }
 
-.subtitle {
-  color: #aaa;
+nav a {
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero h1 {
+  font-size:40px;
+  color:#00e5ff;
+}
+
+.hero button {
+  padding:12px 20px;
+  background:#00e5ff;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* PACKAGES */
+.grid {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin:30px;
+  flex-wrap:wrap;
 }
 
 .card {
-  background: #1c1c1c;
-  width: 300px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
+  background:#111827;
+  padding:20px;
+  width:150px;
+  border-radius:10px;
+  text-align:center;
+  border:1px solid #1f2937;
 }
 
-select, input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+.popular {
+  border:2px solid #00e5ff;
+}
+
+/* ORDER */
+.form {
+  text-align:center;
+  margin:20px;
+}
+
+input, select {
+  display:block;
+  margin:10px auto;
+  padding:10px;
+  width:250px;
+  border-radius:5px;
+  border:none;
 }
 
 button {
-  width: 95%;
-  padding: 10px;
-  background: #00e5ff;
-  border: none;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background: #00bcd4;
+  background:#00e5ff;
+  padding:10px 20px;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
 }
 
 #msg {
-  margin-top: 10px;
-  color: lightgreen;
+  margin-top:10px;
+  color:lightgreen;
+}
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+  background:#111827;
 }
