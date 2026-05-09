@@ -2,76 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mumber Shop - Roblox Top Up</title>
+  <title>Mumber Shop Pro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="logo">MUMBER SHOP</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#packages">Robux</a>
-    <a href="#order">Order</a>
-  </nav>
+  <h1>MUMBER SHOP</h1>
+  <button onclick="openAdmin()">Admin</button>
 </header>
 
 <section class="hero">
-  <h1>Buy Robux Instantly</h1>
-  <p>Safe • Fast • Trusted Delivery</p>
-  <button onclick="document.getElementById('order').scrollIntoView()">
-    Order Now
-  </button>
+  <h2>Fast Digital Top-Up Store</h2>
+  <p>Secure • Instant Process • Trusted</p>
 </section>
 
-<section id="packages">
-  <h2>Choose Your Package</h2>
+<section class="products">
 
-  <div class="grid">
+  <div class="product">
+    <img src="https://via.placeholder.com/150" />
+    <h3>80 Robux</h3>
+    <p>RM3</p>
+  </div>
 
-    <div class="card">
-      <h3>80 Robux</h3>
-      <p>RM3.00</p>
-    </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/150" />
+    <h3>400 Robux</h3>
+    <p>RM13</p>
+  </div>
 
-    <div class="card popular">
-      <h3>400 Robux</h3>
-      <p>RM13.00</p>
-    </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/150" />
+    <h3>800 Robux</h3>
+    <p>RM26</p>
+  </div>
 
-    <div class="card">
-      <h3>800 Robux</h3>
-      <p>RM26.00</p>
-    </div>
+</section>
+
+<section class="order">
+
+  <h2>Place Order</h2>
+
+  <input id="username" placeholder="Username">
+  <input id="contact" placeholder="WhatsApp">
+
+  <select id="product">
+    <option>80 Robux - RM3</option>
+    <option>400 Robux - RM13</option>
+    <option>800 Robux - RM26</option>
+  </select>
+
+  <button onclick="showPayment()">Continue to Pay</button>
+
+</section>
+
+<!-- PAYMENT MODAL -->
+<div id="paymentBox" class="modal">
+
+  <div class="modal-content">
+    <h2>Scan to Pay</h2>
+
+    <img src="QR.png" class="qr">
+
+    <p>After payment click confirm</p>
+
+    <button onclick="submitOrder()">I Have Paid</button>
 
   </div>
-</section>
 
-<section id="order">
-  <h2>Place Your Order</h2>
-
-  <div class="form">
-
-    <input id="username" placeholder="Roblox Username">
-    <input id="contact" placeholder="WhatsApp Number">
-
-    <select id="product">
-      <option>80 Robux - RM3</option>
-      <option>400 Robux - RM13</option>
-      <option>800 Robux - RM26</option>
-    </select>
-
-    <button onclick="submitOrder()">Submit Order</button>
-
-    <p id="msg"></p>
-
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Mumber Shop. All Rights Reserved.</p>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
