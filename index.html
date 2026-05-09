@@ -2,34 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mumber Shop - Robux Top Up</title>
+  <title>Mumber Shop - Roblox Top Up</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>MUMBER SHOP</h1>
-    <p class="subtitle">Fast Roblox Top Up Delivery</p>
+<header>
+  <div class="logo">MUMBER SHOP</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#packages">Robux</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Buy Robux Instantly</h1>
+  <p>Safe • Fast • Trusted Delivery</p>
+  <button onclick="document.getElementById('order').scrollIntoView()">
+    Order Now
+  </button>
+</section>
+
+<section id="packages">
+  <h2>Choose Your Package</h2>
+
+  <div class="grid">
 
     <div class="card">
-      <h2>Select Package</h2>
-
-      <select id="product">
-        <option value="80 Robux - RM3">80 Robux - RM3</option>
-        <option value="400 Robux - RM13">400 Robux - RM13</option>
-        <option value="800 Robux - RM26">800 Robux - RM26</option>
-      </select>
-
-      <input type="text" id="username" placeholder="Roblox Username">
-      <input type="text" id="contact" placeholder="WhatsApp Number">
-
-      <button onclick="submitOrder()">Place Order</button>
-
-      <p id="msg"></p>
+      <h3>80 Robux</h3>
+      <p>RM3.00</p>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <div class="card popular">
+      <h3>400 Robux</h3>
+      <p>RM13.00</p>
+    </div>
+
+    <div class="card">
+      <h3>800 Robux</h3>
+      <p>RM26.00</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="order">
+  <h2>Place Your Order</h2>
+
+  <div class="form">
+
+    <input id="username" placeholder="Roblox Username">
+    <input id="contact" placeholder="WhatsApp Number">
+
+    <select id="product">
+      <option>80 Robux - RM3</option>
+      <option>400 Robux - RM13</option>
+      <option>800 Robux - RM26</option>
+    </select>
+
+    <button onclick="submitOrder()">Submit Order</button>
+
+    <p id="msg"></p>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mumber Shop. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
